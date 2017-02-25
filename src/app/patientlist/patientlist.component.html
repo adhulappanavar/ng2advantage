@@ -1,0 +1,10 @@
+
+
+    <div>
+    <h1>Patient List</h1>
+    <hr/>
+    <div class="row">
+      <div *ngFor="let patient of patients | async " class="col-md-5">
+        <patient-thumbnail [patient]="patient"></patient-thumbnail>
+      </div>
+    </div>
